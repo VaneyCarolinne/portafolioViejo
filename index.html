@@ -1,178 +1,304 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-<!-- Por Vanessa Cruz  y Joshua Hernandez-->
-<!-- FrontEnd Con Bootstrap TALLER DE WEB 1-->
-    <head>
-	 <!-- metas -->
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS de Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- Librería jQuery requerida por los plugins de JavaScript -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-	<!-- Plugins de javascript en boopstrap  -->
-    <script src="js/bootstrap.min.js"></script>
+<head>
 
-	<!-- Scripts desde la Web oficial -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-	
-	
-	
-	<title>N.E.R.D.S</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-	<!-- Maquetando pagina web -->
-        <div class="container">
-			<br>
-			<button type="button" class="btn btn-dark" href="index.html"> Inicio </button>
-			<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"> Libros </button>
-			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"> Compra Online </button>
-			<button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal"> Tiendas </button>
-			<div class="btn-group">
-				<button type="button" class="btn btn-primary"> N.E.R.D.S people </button>
-			    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-				<span class="caret"></span>
-				</button>
-				<div class="dropdown-menu">
-					<a class="dropdown-item" href="#"> Separadores </a>
-					<a class="dropdown-item" href="#"> Boligrafos </a>
-					<a class="dropdown-item" href="#"> Carpetas </a>
-					<a class="dropdown-item" href="#"> Cuadernos </a>
-					<a class="dropdown-item" href="#"> Bolsos </a>
-				</div>
-			</div>
-			<img src="Imagen3.png" align="right-side" style="max-width: 100px; max-height: 100px">
-			<span class="badge badge-pill badge-warning">Ofertas Mes de Diciembre</span>
-			Bienvenidos todos a <strong><u>N.E.R.D.S!</u></strong>
-			<img src="Logo.png" align="right" style="max-width: 100px; max-height: 100px">
-			
-		</div>
-		
-		<!-- Modelo para mensaje alert -->
-		<div class="modal fade" id="myModal">
-			<div class="modal-dialog">
-			<div class="modal-content">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-			<!-- Header del Modelo  -->
-			<div class="modal-header">
-				<h4 class="modal-title">AVISO IMPORTANTE</h4>
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-			</div>
+  <title>VaneyCaroline</title>
 
-			<!-- Body del Modelo -->
-			<div class="modal-body">
-				Actualmente nuestra pagina web esta en mantenimiento...!
-				Saludos!
-			</div>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-			<!-- Boton de cierre del modelo -->
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-			</div>
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-			</div>
-			</div>
-		</div>
-		
-		
-		
-	<!-- Carrucel para varias imagenes -->
-	<div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
 
-		<!-- Indicadores para cada actividad -->
-		<ul class="carousel-indicators">
-			<li data-target="#demo" data-slide-to="0" class="active"></li>
-			<li data-target="#demo" data-slide-to="1"></li>
-			<li data-target="#demo" data-slide-to="2"></li>
-		</ul>
+</head>
 
-		<!-- Deslizar imagenes -->
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img align=center src="feria_libro_panoramica.jpg" alt="Estudia" style="max-width: 150000000000000px; max-height: 350px">
-				 <div class="carousel-caption">
-					<h1>Estudia</h1>
-					<p>Lo mejor para ti.</p>
-				</div>      
-			</div>
-			<div class="carousel-item">
-				<img align=center src="Harry.jpg" alt="Lee" style="max-width: 15000; max-height: 350px">
-				 <div class="carousel-caption">
-					<h1>Lee nuevas aventuras</h1>
-					<p>Harry Potter, Furia de Dragones</p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img align=center src="Opcional.jpg" alt="Se un NERD!" style="max-width: 15000px; max-height: 350px">				
-				<div class="carousel-caption">
-					<h1>Personalizate</h1>
-					<p>Se un nerd</p>
-				  </div>
-			</div>
-		</div>
+<body id="page-top">
 
-		<!-- Controles de derecha a izquierda, antes y despues -->
-		<a class="carousel-control-prev" href="#demo" data-slide="prev">
-			<span class="carousel-control-prev-icon"></span>
-		</a>
-		<a class="carousel-control-next" href="#demo" data-slide="next">
-			<span class="carousel-control-next-icon"></span>
-		</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Vaney Caroline</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Biografía</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Educación</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Intereses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portafolios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Certificados</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-	</div>
-	
-	<br><br>
-		<!-- Tablas y columnas para la pagina Web-->
-	<div class="container">
-	  
-		<div class="row">
-			<div class="col-sm-4">
-				<h3 >Estudia con nosotros</h3>
-				<p >Tenemos toda una Biblioteca para tus estudios</p>
-				<p "text-center">Universidad</p>
-				<p "text-center">Preparatoria</p>
-				<p "text-center">Escuela</p>
-				<p "text-center">Investigacion</p>
-			</div>
-			<div class="col-sm-4">
-				<h3>Vete al mundo de las aventuras con nosotros</h3>
-				<p>Dragones, Magia, Historias , Romance</p>
-				<p>Unete a nuestro club de lectura.</p>
-				<form action ="Unirse.html">
-				<button type="submit" class="btn btn-info"> Unirse </button>
-				</form>
-			</div>
-			<div class="col-sm-4">
-				<h3 >Personaliza tu rutina academica con N.E.R.D.S People</h3> 
-				<p "text-center">Boligrafos</p>
-				<p "text-center">Separadores</p>
-				<p "text-center">Carpetas</p>
-				<p "text-center">Agendas</p>
-			</div>
-		</div>
-	</div>
-	
-	<!-- Caja de Texto-->
-	<div class="form-group">
-		<label for="comment">Comentarios:</label>
-		<textarea class="form-control" rows="5" id="comment"></textarea>
-	</div>
-	<br>
-	<button type="button" align="right-side" class="btn btn-dark" data-toggle="modal" data-target="#myModal"> Comentar </button>
-	<br>
-	<br>
-	<br>
-	<p align="right"> Hecho por:<br> Vanessa Cruz<br>Joshua Hernandez</p>
-	</body>
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Vanessa
+          <span class="text-primary">Cruz</span>
+        </h1>
+        <div class="subheading mb-5">VENEZUELA · EDO. Carabobo - San Diego. · (+58) 426 945-0802·
+          <a href="mailto:vaneycarolinne.vc@email.com">vaneycarolinne.vc@email.com</a>
+        </div>
+        <p class="lead mb-5">Programadora Web Junior (Full Stack) · Desarrollo de Aplicaciones Móviles · Diseño de Base de Datos</p>
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/vaneycaroline/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Vaneycarolinne">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://twitter.com/VaneyCaroline">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/vaneycaroline/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experiencia</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Consultor de Desarrollo - Junior</h3>
+            <div class="subheading mb-3">SOFOS - SME</div>
+            <p>Diseño de Soluciones SAP con aplicaciones web · OpenUI5 · JavaScript · Loopback · NODEjs · Python · Postgress · Diseño de Base de Datos .</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Noviembre 2018 - Actualidad</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Desarrollador de Aplicaciones</h3>
+            <div class="subheading mb-3">Intelix Synergy, CA</div>
+            <p>Desarrollo de Aplicaciones al Cliente EPA. · Ágil · DB2 · Java</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Enero 2018 - Octubre 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Analista de Sistemas</h3>
+            <div class="subheading mb-3">Ferreterías EPA</div>
+            <p>Programa de Formación para Desarrolladores de Software en JAVA.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Julio 2017 - Enero 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Freelancer</h3>
+            <div class="subheading mb-3">Fiverr</div>
+            <p>Desarrollo de subprogramas en C y C++</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Septiembre 2015 - Febrero 2017</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Educación</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Universidad de Carabobo</h3>
+            <div class="subheading mb-3">Licenciada en Ciencias de la Computación</div>
+            <div>Ciencias de la Computación - Facyt</div>
+            <p>Programadora</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">Octubre 2011 - Julio 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0"></h3>
+            <div class="subheading mb-3">Bachiller en Ciencias - José María Vargas</div>
+            <p>Bachiller</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary"> Julio 2006 - Julio 2011</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Habilidades</h2>
+
+        <div class="subheading mb-3">Lenguajes de Programación &amp; Herramientas</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node"></i>
+          </li>
+          <li class="list-inline-item">
+              <i class="fab fa-laravel"></i>
+          </li>
+          <li class="list-inline-item">
+              <i class="fab fa-java"></i>
+          </li>
+
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile-First, Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Browser Testing &amp; Debugging</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Functional Teams</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Intereses</h2>
+        <p>Desarrolladora de Software, orientada al éxito y con ganas de siempre aprender cosas nuevas, no me detengo en tomar algún lenguaje de programación por primera vez y aprenderlo sobre la marcha, he trabajado como freelancer y en empresas dirigidas a diferente tipos de clientes, he tenido la oportunidad de construir y manejar aplicaciones web, móviles, y de escritorio, manteniendo la iniciativa de desarrollo de software de calidad y código limpio como ley de vida.</p>
+        <p class="mb-0">Uno de los temas que más me llama la atención en el momento es la Blockchain y los Smart Contracts.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+     <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Portfolio en proceso ...</h3>
+          <h2 class="mb-5">SERVICIOS</h2>
+        </div>
+        <div>
+            <img src="img/logo.jpg" width="500" height="500">
+            <img src="img/servicios.jpg" width="500" height="500">
+        </div>
+
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Logros &amp; Certificaciones</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Programa de Formación de Desarrollo de Software en JAVA y SCRUM - Ferreterías EPA</li>
+          <li>
+          <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Curso Gratis de Programación Básica - Platzi</li>
+          <li>
+
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
 </html>
